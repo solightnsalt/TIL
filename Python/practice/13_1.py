@@ -13,4 +13,7 @@ print(result)
 world = 'apple'
 for i in range(len(word)):
     print(word[len(word)-i-1],end='')
-    
+
+# 3번으로 풀수록 알고리즘에 강해진다.
+# end는 print 기본값에 있음 \n 개행 
+# 아~~~~  
