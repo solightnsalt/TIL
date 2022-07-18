@@ -1,3 +1,2 @@
-name = input('이름을 입력해주세요 :')
-print(name)
-
+number = 22020718
+print(len(number))

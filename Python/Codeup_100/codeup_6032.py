@@ -1,2 +1,2 @@
 n = int(input())
-print('%x'%n)
+print(-n)
