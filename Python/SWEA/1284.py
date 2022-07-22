@@ -1,10 +1,10 @@
 # w = 종민이 쓴 물 
 # a_rate = w * p 
 # b_rate 
-# if w > r:
+# if w > r: 3항 뭐시기 쓰기 
 #     q + (w-q)*s 
 #  if a > b:
-#      print(b)
+#      print(b) 
 #  else: 
 #      print(a)   
 
@@ -23,3 +23,6 @@ for test_case in range(1, T + 1):
         print(f'#{test_case} {b}')
     else:
         print(f'#{test_case} {a}')
+    
+    # if문 안써도 그냥 프린트에 바로 가능 
+    # print(f'#{test_case} {min(a, b)})
