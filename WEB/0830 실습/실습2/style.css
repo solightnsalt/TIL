@@ -1,0 +1,55 @@
+/* 아래에 CSS를 작성해주세요. */
+@font-face {
+  font-family: 'SUIT-Medium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'SUIT-Medium';
+}
+
+.items {
+  width: 300px;
+}
+
+.img {
+  border-radius: 3%;
+  width: 98%;
+  height: 98%;
+}
+
+.seller {
+  color: gray;
+  margin-bottom: 0px;
+
+}
+
+.item-name {
+  margin-bottom: 0px;
+
+
+}
+
+.price {
+  font-weight: bold;
+  margin-bottom: 0px;
+
+}
+
+.discount-rate {
+  color: skyblue;
+  font-weight: bold;
+}
+
+.rating {
+  font-weight: bold;
+  margin-bottom: 0px;
+
+}
+
+.review {
+  color: grey;
+  font-weight: bold;
+}
