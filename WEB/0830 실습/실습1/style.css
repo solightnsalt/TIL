@@ -1,8 +1,15 @@
 /* 아래에 CSS를 작성해주세요. */
+* {
+  font-family: 'BBTreeGB';
+  box-sizing: border-box;
+}
+
+/* color: rgn(255, 255, 255) */
+
+
 .title-box {
   width: 900px;
   display: block;
-  box-sizing: border-box;
 }
 
 .title {
@@ -20,6 +27,7 @@
 .card {
   width: 300px;
   float: left;
+  /* 또는 display: inline-block; */
   margin: 1%;
 }
 
@@ -52,8 +60,4 @@
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGB.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-}
-
-* {
-  font-family: 'BBTreeGB';
 }
