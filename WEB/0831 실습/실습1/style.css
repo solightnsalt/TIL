@@ -1,0 +1,66 @@
+/* 아래에 CSS를 작성해주세요. */
+* {
+  font-family: 'BBTreeGB';
+  box-sizing: border-box;
+}
+
+/* color: rgn(255, 255, 255) */
+
+
+.title-box {
+  display: flex;
+  justify-content: center;
+  width: 900px;
+
+}
+
+.title {
+  text-align: center;
+}
+
+.sub {
+  font-size: 12px;
+}
+
+.cards-deck {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 900px;
+}
+
+.card {
+  width: 300px;
+}
+
+.img {
+  border-radius: 5%;
+  width: 98%;
+  height: 98%;
+}
+
+.card-body {
+  margin: 5%;
+}
+
+.sub {
+  font-size: 10px;
+}
+
+.title2 {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.exp {
+  font-size: 10px;
+  color: gray;
+}
+
+@font-face {
+  font-family: 'BBTreeGB';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGB.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
