@@ -1,7 +1,7 @@
 n = 1
 dn = 0
 dn_list = []
-while dn <= 10000:
+while n <= 10000:
     sn = str(n)
     dn = n
     for i in sn:
