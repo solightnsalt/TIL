@@ -1,0 +1,23 @@
+.moving {
+  animation-duration: 2s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: -20%;
+    width: 100%
+  }
+
+  to {
+    margin-left: 80%;
+    width: 100%;
+  }
+}
+
+.nav-item {
+  border: 1px;
+  border-color: ;
+}
