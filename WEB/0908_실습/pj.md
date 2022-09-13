@@ -1,0 +1,5 @@
+https://startbootstrap.com/previews/shop-homepage
+
+https://startbootstrap.com/previews/shop-item
+
+https://startbootstrap.com/previews/business-frontpage
