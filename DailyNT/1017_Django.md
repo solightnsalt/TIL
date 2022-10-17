@@ -4,26 +4,28 @@
 
 ### 설정 과정 
 
-1. It Requires Pillow Library ( =Python Imageing Library), so install pillow using `pip install`
+1. It Requires Pillow Library ( =Python Imaging Library), so install pillow using `pip install`
 
-2. Set the FIeld and migrate
+2. Set the Field and migrate
 
    `Image = models.ImageField(upload_to='images/', blank=True)`
 
 
 3. Add Image to `filters=("image",)` `forms.py`
-   + 여기까지 했을 때 html input o, imagefield o
+   + 여기까지 했을 때 html input works & Imagefield works
    + 근데 왜 DB에 반영 안됨? 
 
 4. HTMLFormElement를 같이 받아와야한다. 
 
    `<form action="" method="POST" enctype="multipart/form-data></form>"`
 
-   + 이렇게까지 하고 Request Impormation을 보면 File 항목 받아온 것을 확인 할 수 있다. 
+   + 이렇게까지 하고 Request Information을 보면 File 항목 받아온 것을 확인 할 수 있다. 
+
+     (일부러 뷰에 오류 내서 확인 가능)
 
 5. Static/images/에 첨부된 이미지가 저장된다. 
 
-> Post = Review.objects.all()
+> `Post = Review.objects.all()`
 >
 > Post.
 
