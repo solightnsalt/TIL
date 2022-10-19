@@ -32,8 +32,11 @@
 6. set Media_url, media_root in settings.pt
 
    ```python
-   MEDIA_ROOt = BASE_DIR / "images"
-   MEDIA_URL = ""
+   #사용자가 업로드 한 파일 미디어 파일 들을 보관할 디렉토리의 절대 경로
+   MEDIA_ROOT = BASE_DIR / "media" 
+   # MEDIA_ROOT에서 제공되는 미디어를 처리하는 URL
+   # 업로드된 파일의 주소를 만들어 주는 역할
+   MEDIA_URL = "/media/"
    ```
 
 7. urls.py에 사진 경로를 추가
