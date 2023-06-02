@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>자바스크립트 문법 연습하기!</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<style>
+  .button-part {
+    display: flex;
+    height: 50px;
+  }
+
+  .button-part button {
+    background-color: pink;
+    border-radius: 5px;
+  }
+</style>
+<!-- <script>
+  function checkResult() {
+    let a = ['사과', '배', '포도', '복숭아']
+    $('#q1').text(a[0] + ', ' + a[1])
+
+    let b = { 'name': '안보현', 'style': '체대훈남' }
+    $('#q2').text(b['name'])
+
+    let c = [
+      { 'name': '안보현', 'style': '체대훈남' },
+      { 'name': '박서함', 'style': '미대훈남' }
+    ]
+    $('#q3').text(c[0]['style'])
+  }
+</script> -->
+<!-- <script>
+  // forEach((a)) 의 a는 python for i in j의 i 와 같음 
+  let fruits = ['사과', '배', '포도', '딸기']
+  fruits.forEach((a) => {
+    console.log(a)
+  }
+  )
+</script> -->
+<script>
+  let ages = [23, 13, 26, 16, 20, 32, 21]
+  ages.forEach((a) => {
+    if (a > 19) {
+      console.log('성인입니다.')
+    }
+    else {
+      console.log('미성년자입니다.')
+    }
+  })
+
+</script>
+
+<body>
+  <div class="top-part">
+    <h1>자바스크립트 문법 연습하기!</h1>
+  </div>
+  <hr />
+  <br>
+  <h2>1. 함수</h2>
+  <div class="button-part">
+    <button onclick="checkResult()">결과 확인하기!</button>
+  </div>
+  <div class="list-part">
+    <h2>2. 리스트</h2>
+    <div id="q1"></div>
+  </div>
+  <div class="dict-part">
+    <h2>3. 딕셔너리</h2>
+    <div id="q2"></div>
+  </div>
+  <div>
+    <h2>4. 리스트 딕셔너리</h2>
+    <div id="q3"></div>
+  </div>
+</body>
+
+</html>

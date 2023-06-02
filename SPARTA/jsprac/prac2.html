@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Fetch 시작하기</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    // fetch 기본 골격
+    fetch("http://spartacodingclub.shop/sparta_api/seoulair").then(res => res.json()).then(data => {
+      // console.log(data['RealtimeCityAir']['row'][0])
+      let rows = data['RealtimeCityAir']['row']
+      rows.forEach((a) => {
+        $('#seoulAir').text(a['MSRSTE_NM'])
+        $('#airStatus').text(a['IDEX_NM'])
+      })
+    })
+  </script>
+</head>
+
+<body>
+  <h1>Fetch 연습을 위한 페이지</h1>
+  <div class="airlist" id="seoulAir"></div>
+  <div class="air_sts" id="airStatus"></div>
+</body>
+
+</html>
