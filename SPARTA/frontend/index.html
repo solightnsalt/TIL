@@ -153,6 +153,8 @@
         let star = a['star']
         let cmt = a['comment']
 
+        // python처럼 문자열 * int 가 되지 않는다 ! 
+        // repeat() : 문자열을 주어진 횟수만큼 반복해 붙인 새로운 문자열을 반환하는 메서드
         let stars = '⭐'.repeat(star)
 
         movie_list.innerHTML += `
