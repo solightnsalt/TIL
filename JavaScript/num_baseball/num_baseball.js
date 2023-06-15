@@ -12,7 +12,7 @@ function getUserNum () {
   let testCount = 0;
 
   // 프로그램 시작을 알리는 msg
-  console.log(`컴퓨터가 숫자를 생성하였습니다. 답을 맞춰보세요! ${computer}`) 
+  console.log(`컴퓨터가 숫자를 생성하였습니다. 답을 맞춰보세요!`) // ${computer}
 
   input.question(`${testCount}번째 시도 : `, function program (userValue) {
 
