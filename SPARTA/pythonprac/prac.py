@@ -1,6 +1,10 @@
 # requests == js fetch처럼 서버에서 데이터를 가져오는 라이브러리
 import requests
 from bs4 import BeautifulSoup
+from pymongo import MongoClient
+
+client = MongoClient('mongodb+srv://sparta:test@cluster0.mgovdoc.mongodb.net/?retryWrites=true&w=majority')
+db = client.dbsparta
 
 URL = "https://movie.daum.net/ranking/reservation"
 headers = {
@@ -16,4 +20,11 @@ for movie in movie_list:
     rank = movie.select_one('.rank_num').text
     poster = movie.select_one('.img_thumb')['src']
 
+    dict = {
+        'title' : title,
+        'summary' : summary,
+        'rank' : rank,
+        'poster' : poster
+    }
 
+    db.movies.insert_one(dict)
