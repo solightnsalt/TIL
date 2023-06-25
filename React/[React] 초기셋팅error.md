@@ -53,127 +53,6 @@ Done.
 
   
 
-+ 정상작동 시 terminal msg
-
-```bash
-solda@SOL-home MINGW64 ~/Desktop/dev/GIT/TIL/React (main)
-$ yarn create react-app week-1
-➤ YN0000: ┌ Resolution step
-➤ YN0061: │ tar@npm:2.2.2 is deprecated: This version of tar is no longer supported, and will not receive s
-ecurity updates. Please upgrade asap.
-➤ YN0000: └ Completed in 1s 405ms
-➤ YN0000: ┌ Fetch step
-➤ YN0000: └ Completed
-➤ YN0000: ┌ Link step
-➤ YN0000: └ Completed
-➤ YN0000: Done with warnings in 1s 566ms
-
-
-Creating a new React app in C:\Users\solda\Desktop\dev\GIT\TIL\React\week-1.
-
-Installing packages. This might take a couple of minutes.
-Installing react, react-dom, and react-scripts with cra-template...
-
-➤ YN0000: ┌ Resolution step
-➤ YN0032: │ fsevents@npm:2.3.2: Implicit dependencies on node-gyp are discouraged
-➤ YN0061: │ svgo@npm:1.3.2 is deprecated: This SVGO version is no longer supported. Upgrade to v2.x.x.     
-➤ YN0061: │ workbox-cacheable-response@npm:6.6.0 is deprecated: workbox-background-sync@6.6.0
-➤ YN0061: │ rollup-plugin-terser@npm:7.0.2 is deprecated: This package has been deprecated and is no longer
- maintained. Please use @rollup/plugin-terser
-➤ YN0061: │ stable@npm:0.1.8 is deprecated: Modern JS already guarantees Array#sort() is a stable sort, so 
-this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/We
-b/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility
-➤ YN0061: │ w3c-hr-time@npm:1.0.2 is deprecated: Use your platform's native performance.now() and performan
-ce.timeOrigin.
-➤ YN0061: │ sourcemap-codec@npm:1.4.8 is deprecated: Please use @jridgewell/sourcemap-codec instead        
-➤ YN0002: │ eslint-config-react-app@npm:7.0.1 [64b15] doesn't provide @babel/plugin-syntax-flow (p17639), r
-equested by eslint-plugin-flowtype
-➤ YN0002: │ eslint-config-react-app@npm:7.0.1 [64b15] doesn't provide @babel/plugin-transform-react-jsx (p4
-66ce), requested by eslint-plugin-flowtype
-➤ YN0000: │ Some peer dependencies are incorrectly met; run yarn explain peer-requirements <hash> for detai
-ls, where <hash> is the six-letter p-prefixed code
-➤ YN0000: └ Completed in 10s 423ms
-➤ YN0000: ┌ Fetch step
-➤ YN0013: │ yaml@npm:1.10.2 can't be found in the cache and will be fetched from the remote registry       
-➤ YN0013: │ yaml@npm:2.3.1 can't be found in the cache and will be fetched from the remote registry        
-➤ YN0013: │ yargs-parser@npm:20.2.9 can't be found in the cache and will be fetched from the remote regist 
-➤ YN0013: │ yargs@npm:16.2.0 can't be found in the cache and will be fetched from the remote registry      
-➤ YN0013: │ yocto-queue@npm:0.1.0 can't be found in the cache and will be fetched from the remote registry 
-➤ YN0000: └ Completed in 11s 399ms
-➤ YN0000: ┌ Link step
-➤ YN0000: │ ESM support for PnP uses the experimental loader API and is therefore experimental
-➤ YN0007: │ core-js@npm:3.31.0 must be built because it never has been before or the last one failed       
-➤ YN0007: │ core-js-pure@npm:3.31.0 must be built because it never has been before or the last one failed  
-➤ YN0000: └ Completed in 8s 831ms
-➤ YN0000: Done with warnings in 30s 866ms
-
-Installing template dependencies using yarnpkg...
-➤ YN0000: ┌ Resolution step
-➤ YN0002: │ eslint-config-react-app@npm:7.0.1 [64b15] doesn't provide @babel/plugin-syntax-flow (p17639), r
-equested by eslint-plugin-flowtype
-➤ YN0002: │ eslint-config-react-app@npm:7.0.1 [64b15] doesn't provide @babel/plugin-transform-react-jsx (p4
-66ce), requested by eslint-plugin-flowtype
-➤ YN0002: │ week-1@workspace:. doesn't provide @testing-library/dom (pcdd03), requested by @testing-library
-/user-event
-➤ YN0000: │ Some peer dependencies are incorrectly met; run yarn explain peer-requirements <hash> for detai
-ls, where <hash> is the six-letter p-prefixed code
-➤ YN0000: └ Completed in 3s 118ms
-➤ YN0000: ┌ Fetch step
-➤ YN0013: │ redent@npm:3.0.0 can't be found in the cache and will be fetched from the remote registry      
-➤ YN0013: │ stop-iteration-iterator@npm:1.0.0 can't be found in the cache and will be fetched from the rem 
-➤ YN0013: │ strip-indent@npm:3.0.0 can't be found in the cache and will be fetched from the remote registr 
-➤ YN0013: │ web-vitals@npm:2.1.4 can't be found in the cache and will be fetched from the remote registry  
-➤ YN0013: │ which-collection@npm:1.0.1 can't be found in the cache and will be fetched from the remote reg 
-➤ YN0000: └ Completed in 1s 414ms
-➤ YN0000: ┌ Link step
-➤ YN0000: │ ESM support for PnP uses the experimental loader API and is therefore experimental
-➤ YN0000: └ Completed in 0s 452ms
-➤ YN0000: Done with warnings in 5s 199ms
-Removing template package using yarnpkg...
-
-➤ YN0000: ┌ Resolution step
-➤ YN0002: │ eslint-config-react-app@npm:7.0.1 [64b15] doesn't provide @babel/plugin-syntax-flow (p17639), r
-equested by eslint-plugin-flowtype
-➤ YN0002: │ eslint-config-react-app@npm:7.0.1 [64b15] doesn't provide @babel/plugin-transform-react-jsx (p4
-66ce), requested by eslint-plugin-flowtype
-➤ YN0002: │ week-1@workspace:. doesn't provide @testing-library/dom (pcdd03), requested by @testing-library
-/user-event
-➤ YN0000: │ Some peer dependencies are incorrectly met; run yarn explain peer-requirements <hash> for detai
-ls, where <hash> is the six-letter p-prefixed code
-➤ YN0000: └ Completed in 0s 222ms
-➤ YN0000: ┌ Fetch step
-➤ YN0019: │ cra-template-npm-1.2.0-5ec02f7dcd-50f11eb15f.zip appears to be unused - removing
-➤ YN0000: └ Completed in 0s 780ms
-➤ YN0000: ┌ Link step
-➤ YN0000: │ ESM support for PnP uses the experimental loader API and is therefore experimental
-➤ YN0000: └ Completed in 0s 391ms
-➤ YN0000: Done with warnings in 1s 610ms
-
-Success! Created week-1 at C:\Users\solda\Desktop\dev\GIT\TIL\React\week-1
-Inside that directory, you can run several commands:
-
-  yarn start
-    Starts the development server.
-
-  yarn build
-    Bundles the app into static files for production.
-
-  yarn test
-    Starts the test runner.
-
-  yarn eject
-    Removes this tool and copies build dependencies, configuration files
-    and scripts into the app directory. If you do this, you can’t go back!
-
-We suggest that you begin by typing:
-
-  cd week-1
-  yarn start
-
-Happy hacking!
-```
-
-
 
 ## error 2
 
@@ -221,4 +100,12 @@ To create a production build, use yarn build.
 
 webpack compiled successfully
 ```
+
++ 해결
+
+  `npm install eslint-config-react-app@6` 을 설치해주니 해당 오류 발생하지 않
+
+
+
+[eslint]문법 교정 역할!  에서 말하는 규칙이 지켜지지 않았을 경우일 가능성
 

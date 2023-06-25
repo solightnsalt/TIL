@@ -97,3 +97,39 @@ export default App; //2. 내보낸다. 무엇을?? 내가 만든 컴포넌트를
 
 
 ## 컴포넌트의 부모자식 관계
+
++ 컴포넌트 안에 또다른 컴포넌트가 들어갈 수 있다.
+
+  -> 컴포넌트{컴포넌트{컴포넌트{}}}
+
+  + 다른 컴포넌트를 품는 컴포넌트 = 부모 컴포넌트
+  + 다른 컴포넌트 안에서 품어지는 컴포넌트 = 자식 컴포넌트
+
+  ```react
+  // src/App.js
+  import React from "react";
+  
+  function Child() {
+    return <div>응애</div>; //app 속의 child
+  }
+  
+  function App() { 
+    return <Child />; // app은 child라는 컴포넌트를 받아와서 리턴
+  }
+  
+  export default App; // 최종적으로 App 컴포넌트를 내보냄
+  ```
+
+  > 하나의 컴포넌트였던 것들 리팩토링을 통해 *<u>반복되는 일정 부분</u>*을 따로 빼서 부모자식화 해준다.
+  >
+  > ```react
+  > // src/App.js
+  > import React from "react";
+  > 
+  > function App() {
+  >   return <div>응애</div>;
+  > }
+  > 
+  > export default App;
+  > ```
+
