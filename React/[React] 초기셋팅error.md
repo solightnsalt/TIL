@@ -109,3 +109,26 @@ webpack compiled successfully
 
 [eslint]문법 교정 역할!  에서 말하는 규칙이 지켜지지 않았을 경우일 가능성
 
+
+
+## error 3
+
++ 에러메세지
+
+  ```bash
+  Usage Error: Couldn't find the node_modules state file - running an install might help (findPackageLocation)
+  ```
+
+  
+
++ 상황
+
+  window로 작업한 앱을 맥os에서 풀 받아 `yarn start `시 에러발생
+
++ 해결
+
+  `yarn install` 후 다시 시작하니 해결됨
+
+  > 참고 
+  >
+  > [Why I get this error: Couldn't find the node_modules・・・](https://stackoverflow.com/questions/72161929/why-i-get-this-error-couldnt-find-the-node-modules-state-file-running-an-ins)
