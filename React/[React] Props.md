@@ -113,7 +113,7 @@ export default App;
 
 ### children의 용도
 
-+ Layout 컴포넌트를 만들 때 자주 사용된다.
++ Layout용 컴포넌트를 만들 때 자주 사용된다.
 
   ```react
   // src/About.js
@@ -132,5 +132,21 @@ export default App;
   export default App;
   ```
 
+
+
+
+
+## props 추출
+
++ props를 잘 쓰려면 js 구조분해 할당을 잘 알고 있어야함
+
+  ```js
+  const testObj = {
+      name: 'dasol',
+      age: '20',
+      job: 'student',    
+  }
   
+  const {name, age, job} = testObj;
+  ```
 
