@@ -132,5 +132,16 @@ export default App;
   export default App;
   ```
 
-  
+
+
+
+### default props
+
++ 매개 변수가 지정되지 않았을 때 자동으로 지정해줄 값을 미리 정해주는 것
+
+
+
+
+
+
 
